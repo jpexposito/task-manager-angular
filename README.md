@@ -1,59 +1,101 @@
-# Task
+<div align="justify">
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+# Gestor de tareas 
 
-## Development server
+<div align="center">
+  <img src=images/tasks.png
+   width="350">
+</div>
 
-To start a local development server, run:
+Aplicación **Angular** de ejemplo con varias páginas (routing), estilos globales y un formulario para **crear** y **eliminar** tareas (CRUD básico en memoria).
+
+> Práctica orientada a **Angular CLI 21** con componentes **standalone**.
+
+---
+
+## Tecnologías utilizadas
+
+- **Angular (standalone components)**  
+  
+  Arquitectura moderna basada en componentes standalone.
+
+- **Angular CLI 21**  
+  
+  Generación de proyecto, componentes/servicios y servidor de desarrollo.
+
+- **TypeScript**  
+  
+  Tipado fuerte (`interface`, `type`) y utilidades como `Omit`.
+
+- **Angular Router**  
+  
+  Navegación entre páginas mediante `Routes` y `<router-outlet>`.
+
+- **Reactive Forms (Angular Forms)**  
+  
+  Formularios reactivos con `ReactiveFormsModule`, `FormBuilder` y validación con `Validators`.
+
+- **HTML + Angular Template Syntax**  
+  
+  Interpolación, bindings y control de flujo moderno (`@if`, `@for`).
+
+- **CSS**  
+  
+  Estilos globales (`src/styles.css`) y estilos por componente.
+
+- **Node.js + npm**  
+  
+  Entorno y gestor de paquetes para dependencias, scripts y ejecución.
+
+---
+
+## Requisitos
+
+- Node.js **22.x**
+- npm **10.x**
+- Angular CLI **21.x**
+
+---
+
+## Scripts útiles
 
 ```bash
-ng serve
+# servidor de desarrollo
+ng serve -o
+
+# generación de componentes y servicios (ejemplos)
+ng g c pages/home
+ng g c pages/tasks
+ng g c pages/task-new
+ng g c shared/navbar
+ng g s services/tasks
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Estructura del proyecto (resumen)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+src/app/
+├─ pages/        # páginas (Home, Tasks, TaskNew)
+├─ shared/       # componentes compartidos (Navbar)
+├─ services/     # servicios (TasksService)
+└─ models/       # modelos y tipos (Task, NewTask)
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Funcionalidad
 
-## Building
+- Listado de tareas
+- Alta de tareas con formulario reactivo
+- Eliminación de tareas
+- Persistencia **en memoria** (sin backend)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## Autoría
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Práctica realizada para **Code & Learn** (Práctica 1).
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+</div>

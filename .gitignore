@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Angular build output
+dist/
+out-tsc/
+.tmp/
+.angular/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Env files (si usas variables)
+.env
+.env.*
+!.env.example
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
+.eslintcache
+
+# Angular Universal / SSR (si aplica)
+# (descomenta si tu proyecto tiene SSR)
+# .server/
+# prerendered/

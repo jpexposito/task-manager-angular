@@ -94,8 +94,9 @@ src/app/
 
 ---
 
-## Autoría
+## Referencias
 
-Práctica realizada para **Code & Learn** (Práctica 1).
+- **[Code & Learn - (Práctica 1)](https://github.com/jpexposito/code-learn/blob/main/comun/angular/practicas/practica-01.md)** .
+- **[Code & Learn - (Práctica 2)](https://github.com/jpexposito/code-learn/blob/main/comun/angular/practicas/practica-02.md)** 
 
 </div>
